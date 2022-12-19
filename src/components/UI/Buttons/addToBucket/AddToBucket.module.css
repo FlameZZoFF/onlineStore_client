@@ -1,0 +1,69 @@
+.button{
+  transition: 1s;
+  pointer-events: all;
+  border: 0;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: var(--addtobucketback-color);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+    margin-left: 1200px;
+    margin-top: 56px;
+    height: 55px;
+    width: 148px;
+}
+
+.active:hover {
+    opacity: 0.5;
+    cursor:pointer;
+    background-position: right center;
+  }
+  .button img {
+    opacity: 0.5;
+    width: 20px;
+  }
+  @media(max-width:1700px){
+    .button{
+      margin: 0;
+      margin-top: 54px;
+      margin-left: 844px;
+    }
+  }
+
+  @media(max-width:1500px){
+    .button{
+      margin: 0;
+      margin-top: 54px;
+      margin-left: 744px;
+    }
+  }
+  @media (max-width:1200px){
+    .button{
+      font-size: 12px;
+      margin: 0;
+      position: relative;
+      margin-top: 34px;
+      margin-left: 54px;
+      width: 135px;
+    }
+  }
+  @media(max-width:498px){
+    .button{
+      font-size: 8px;
+      width: 120px;
+      height: 50px;
+      margin: 0;
+      margin-left: 74px;
+      margin-top: 44px;
+    }
+  }

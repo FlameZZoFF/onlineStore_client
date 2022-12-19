@@ -1,0 +1,58 @@
+.Register_main{
+    width: auto;
+    height: 100vh;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Register_main-form{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 8px rgb(43, 50, 43);
+    background-color: rgb(240, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid black;
+    .Register_form_email{
+        outline: none;
+        border: 2px solid rgb(103, 89, 89);
+        font-size: 20px;
+        margin-left: auto;
+        margin-right:auto ;
+        width: 500px;
+        height: 40px;
+    }
+    .Register_form_password{
+        border: 2px solid rgb(103, 89, 89);
+        font-size: 20px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right:auto ;
+        width: 500px;
+        height: 40px;
+    }
+    .Register_form_submit{
+        font-size: 22px;
+        box-shadow: 1px 1px 10px 3px green;
+        color: white;
+        background-color: rgb(20, 143, 20);
+        margin-top:50px;
+        width: 200px;
+        height: 50px;
+     margin-left: auto;
+     margin-right: auto;
+
+    }
+    .Register_main_title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Register_form_error{
+        color: red;
+        margin: 10px auto 0 auto;
+    }
+}

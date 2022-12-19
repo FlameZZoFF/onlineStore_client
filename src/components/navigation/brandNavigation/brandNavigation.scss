@@ -1,0 +1,26 @@
+.brandNav{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brandNav_el{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.389);
+    border: 3px solid rgb(19, 15, 19);
+    color: rgb(186, 38, 38);
+    cursor: pointer;
+}
+
+.brandNav_el-active{
+    border: 1px solid rgb(217, 217, 217);
+    transition: 0.3s;
+}

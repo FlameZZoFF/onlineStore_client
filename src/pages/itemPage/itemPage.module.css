@@ -1,0 +1,147 @@
+.itemPage{
+ transition: 1s;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ height: 914px;
+ min-width: 100%;
+ background-color: var(--background-color);
+}
+ 
+.itemName{
+    color: rgba(166, 166, 166, 0.978);
+    font-size: 73px;
+}
+.itemPhoto{
+    margin-left: 14px;
+    max-width: 555px;
+    max-height: 555px;
+}
+.itemCost{
+    font-weight: bold;
+    margin-top: 44px;
+    color: rgb(13, 55, 13);
+    font-size: 66px;
+}
+.itemDesc{
+    color: white;
+    margin-left: 898px;
+    width: 400px;
+    position: relative;
+   
+}
+
+
+.ItemBuy{
+    border: 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #3f376e 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+      margin-top: 25px;
+      height: 65px;
+      width: 248px;
+  }
+  .active:hover {
+    opacity: 0.5;
+    cursor:pointer;
+    background-position: right center;
+  }
+  @media(max-width:1500px){
+    .itemPage{
+        min-width: 1500px;
+    }
+    .itemPhoto{
+        height: 450px;
+    }
+    .itemDesc{
+        margin: 0;
+        margin-left: 500px;
+    }
+  }
+  @media (max-width:1200px){
+    .itemPage{
+        min-width: 1200px;
+    }
+    .itemPhoto{
+        width: 443px;
+        height: 183px;
+    }
+    .itemCost{
+        margin-top: 380px;
+        font-size: 46px;
+    }
+    .itemDesc{
+        margin: 0;
+        margin-left: 290px;
+    }
+    .itemName{
+        font-size: 44px;
+    }
+ }
+ @media(max-width:950px){
+    .itemPage{
+        min-width: 950px;
+    }
+ }
+ @media(max-width:750px){
+    .itemPage{
+      min-width: 750px;
+    }
+}
+ @media(max-width:498px){
+    .itemPage{
+        min-width: 498px;
+    }
+    .itemDesc{
+        margin: 0;
+    }
+    .itemPage{
+        height: 800px;
+        min-width: 498px;
+    }
+    .itemPhoto{
+        margin-top: 30px;
+        width: 300px;
+
+    }
+ }
+
+ @media(max-width:375px){
+    .itemPage{
+        min-width: 375px;
+    }
+   .itemDesc{
+    margin-left: 144px;
+    width: 140px;
+    font-size: 11px;
+   }
+}
+
+@media(max-width:360px){
+    .itemPage{
+        min-width: 360px;
+    }
+}
+
+ @media(max-height:700px){
+    
+    .itemCost{
+        margin: 0;
+        margin-top: 184px;
+    }
+ }
+
+  
+  

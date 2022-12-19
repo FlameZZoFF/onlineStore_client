@@ -1,0 +1,28 @@
+.switchTheme{
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    width: 80px;
+    background-color: rgb(89, 114, 136);
+    height: 30px;
+    box-shadow: 0 5px 15px 0 var(--theme-color);
+    transition: 0.5s;
+    z-index: 0;
+}
+.switchTheme:hover{
+    transition: 0.3s;
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 var(--theme-color);
+  }
+
+@media(max-width:498px){
+    .switchTheme{
+        font-size: 10px;
+        margin: 0;
+        margin-left: 84px;
+        width: 50px;
+        height: 20px;
+    }
+}

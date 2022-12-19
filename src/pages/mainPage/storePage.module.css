@@ -1,0 +1,246 @@
+.StorePage{
+    transition: 1s;
+    border: 1px solid #292b2a;
+    background-color: var(--background-color);
+    max-width: calc(100%- 20px);
+    min-height: 1100px;
+}
+.div{
+  pointer-events: none;
+}
+.AllItems{
+  pointer-events:fill;
+  position: relative;
+    transition: 0.3s;
+    background-color: var(--backitem-color);
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    margin-top: 66px;
+    font-size: 10px;
+    margin-right: 11px;
+    text-align: center;
+    height: 155px;
+    width: calc(100%-44px);
+    margin-left: 144px;
+    margin-right: 144px;
+    box-shadow: 1px 15px 10px 5px black;
+    
+}
+.Paginations{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.itemPhoto{
+  pointer-events: none;
+    border-radius: 88px;
+    margin-left: 11px;
+    margin-top: 24px;
+    width: 115px;
+    height: 115px;
+}
+
+.itemName{
+    text-decoration:underline;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.748);
+    position: absolute;
+    margin-left: 600px;
+    font-size: 33px;
+}
+.itemCost{
+  pointer-events: none;
+    font-weight: bold;
+    color: rgb(20, 65, 20);
+    position:absolute;
+    margin-top: 55px;
+    margin-left: 1270px;
+    font-size: 28px;
+}
+.active.AllItems:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow:
+      1px 1px #02170b,
+      2px 2px #02170b,
+      3px 3px #02170b,
+      4px 4px #02170b,
+      5px 5px #02170b,
+      6px 6px #02170b,
+      7px 7px #02170b;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+  .arrEmpty{
+    opacity: 0.5;
+    text-align: center;
+    justify-content: center;
+    color: black;
+  }
+  .arrEmpty img{
+    margin-top: 55px;
+    width: 444px;
+    height: 444px;
+  }
+  .itemText{
+    pointer-events: none;
+    margin-left: 14px;
+    font-size: 12px;
+    margin-top: 54px;
+    color: white;
+  }
+  .transition-enter {
+    opacity: 0.01;
+    transform: translate(0,-10px);
+  }
+  .transition-enter-active {
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all 300ms ease-in;
+  }
+  .transition-exit {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+  .transition-exit-active {
+    opacity: 0.1;
+    transform: translate(0,10px);
+    transition: all 300ms ease-in;
+  }
+  @media(max-width:1700px){
+    .StorePage{
+      min-width: 1700px;
+    }
+  }
+  @media(max-width:1500px){
+    .StorePage{
+      min-width: 1500px;
+    }
+    .AllItems{
+      width: 1150px;
+    }
+    .itemCost{
+      margin: 0;
+      margin-top: 60px;
+      margin-left: 890px;
+    }
+  }
+  @media (max-width:1200px){
+    .StorePage{
+      min-width: 1200px;
+      min-height: 100vh;
+    }
+   .AllItems{
+    margin-left: 400px;
+    position: relative;
+    width: 420px;
+    height: 120px;
+   }
+   .itemCost{
+    margin: 0;
+    margin-left: 388px;
+    font-size: 14px;
+   }
+   .itemName{
+    margin: 0;
+    font-size: 14px;
+   }
+   .itemPhoto{
+    width: 80px;
+    height: 80px;
+   }
+   
+
+  }
+  @media(max-width:950px){
+    .StorePage{
+      min-width: 950px;
+    }
+    .AllItems{
+      margin: 0;
+      margin-top: 45px;
+      margin-left: 250px;
+    }
+  }
+  @media(max-width:750px){
+    .StorePage{
+      min-width: 750px;
+    }
+    .AllItems{
+      margin-left: 0;
+      margin-left: 160px;
+    }
+  }
+  @media (max-width:498px){
+    .StorePage{
+      min-width: 498px;
+      min-height: 950px;
+    }
+   .AllItems{
+    margin: 0;
+    margin-left: 85px;
+    margin-top: 44px;
+    position: relative;
+    width: 350px;
+    height: 120px;
+   }
+   .itemCost{
+    margin: 0;
+    margin-left: 315px;
+    font-size: 14px;
+   }
+   .itemName{
+    margin: 0;
+    margin-right: 111px;
+    font-size: 14px;
+   }
+   .itemPhoto{
+    width: 80px;
+    height: 80px;
+   }
+   
+    .itemText{
+      width: 30px;
+
+    }
+  }
+  @media(max-width:414px){
+    .StorePage{
+      min-width: 414px;
+      min-height: 100vh;
+    }
+    .AllItems{
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 35px;
+    }
+    .arrEmpty img{
+      width: 300px;
+    }
+  }
+  @media(max-width:375px){
+    .StorePage{
+      min-width: 375px;
+      min-height: 100vh;
+    }
+    .AllItems{
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 12px;
+    }
+    .arrEmpty img{
+      margin: 0;
+      width: 300px;
+    }
+  }
+  @media(max-width:360px){
+    .StorePage{
+      min-width: 360px;
+    }
+    .AllItems{
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 4px;
+    }
+  }

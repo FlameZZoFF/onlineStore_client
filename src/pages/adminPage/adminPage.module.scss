@@ -1,0 +1,24 @@
+.buttonsAdd{
+    width: auto;
+    
+    align-items: center;
+    justify-content: center;
+    .button{
+        cursor: pointer;
+        color: #ffffff;
+        border: 2px rgb(144, 71, 34) solid;
+        font-weight: bold;
+        border-radius: 20px;
+        background-color: rgb(233, 129, 26);
+        font-size: 30px;
+        margin: 10px;
+        width: 200px;
+        height: 80px;
+    }
+    
+}
+
+button:hover
+{
+    opacity: 0.8;
+}

@@ -1,0 +1,46 @@
+.devices{
+    margin-top: 80px;
+    background-color: rgb(27, 27, 47);
+    border: 3px solid black;
+    .devices_button{
+        width: 130px;
+        color: white;
+        background-color: rgb(32, 127, 172);
+    }
+    .devices_photo{
+        width: 50px;
+        height: 30px;
+    }
+}
+
+.devices_table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(81, 170, 85);
+    font-size: 30px;
+    display: flex;
+    color: white;
+    text-align: center;
+        
+    tr{
+        background-color: rgb(70, 167, 91);
+        font-weight: bold;
+        text-align: center;
+        width: 200px;
+        font-size: 25px;
+
+    }
+    td{
+        align-self: center;
+        justify-content: center;
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+        width: 500px;
+    }
+}
+
+.devices_button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

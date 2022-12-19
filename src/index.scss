@@ -1,0 +1,48 @@
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html[data-theme='dark']{
+ --background-color: #283654;
+ --wrapper-color:#283654;
+ --buckwrap-color:#111e38;
+ --category-color:#222e46;
+ --category-text-color:rgba(255, 255, 255, 0.777);
+--headerback-color:#1c1e24;
+--backitem-color:#4d638c;
+--sortback-color:rgb(31, 31, 41);
+--addtobucketback-color:linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+--buckitem-color:#4d638c;
+--buybutt-color:rgb(45, 47, 119);
+--clearbuck-color:#3a4192;
+--theme-color:rgb(244, 244, 244);
+}
+
+
+html[data-theme='light']{
+  --background-color:rgba(134, 136, 127, 0.814);
+  --wrapper-color:rgb(185, 185, 194);
+  --buckwrap-color:rgb(80, 75, 75);
+  --category-color:rgb(136, 131, 131);
+  --category-text-color:black;
+  --headerback-color:#3d3f46;
+  --backitem-color:rgb(95, 94, 94);
+  --sortback-color:rgb(145, 149, 152);
+  --addtobucketback-color:linear-gradient(to right, #9EEFE1 0%, #4a4857 51%, #9EEFE1 100%);
+  --buckitem-color:rgba(117, 120, 111, 0.749);
+  --buybutt-color:rgb(100, 58, 58);
+  --clearbuck-color:rgb(170, 136, 136);
+  --theme-color:black;
+}

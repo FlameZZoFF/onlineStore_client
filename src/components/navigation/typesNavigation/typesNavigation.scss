@@ -1,0 +1,41 @@
+.typeNavigation{
+    margin-top: 10px;
+    width: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+.typeNavigation_wrap{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}
+.typeNavigation_el{
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.303);
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    height: 40px;
+    border: 2px solid black;
+}
+.typeNavigation_el:hover{
+  opacity: 0.7;
+  background-color: black;
+}
+.typeNavigation_el-active{
+    border: 1px solid rgb(171, 114, 114);
+    transition: 0.3s;
+}

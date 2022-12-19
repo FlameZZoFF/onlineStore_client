@@ -1,0 +1,310 @@
+.bucketPage{
+    transition: 1s;
+    background-color: var(--background-color);
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 914px;
+    text-align: center;
+}
+.bucketItem{
+    transition: 1s;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    border-radius: 22px;
+    width: 400px;
+    transition: 0.3s;
+    background-color: var(--buckitem-color);
+    display: inline;
+    justify-items: center;
+    text-align: center;
+    margin-top: 66px;
+    font-size: 10px;
+    margin-right: 11px;
+    text-align: center;
+    height: 250px;
+    width: calc(100%-44px);
+    margin-left: 144px;
+    margin-right: 144px;
+    
+}
+.imgBucket{
+    margin-left: 7px;
+    margin-top: 33px;;
+    width: 133px;
+    height: 133px;
+}
+.Empty h1.EmptyBucket{
+    margin-left: 130px;
+    width: 10px;
+    transform: rotate(30deg);
+    opacity: 0.6;
+    margin-top: 375px;
+    position: absolute;
+    font-size: 38px;
+}
+.Empty img{
+    opacity: 0.5;
+    margin-top: 310px;
+    width: 350px;
+    height: 350px;
+}
+.nameBucket{
+    color: rgba(255, 255, 255, 0.748);
+    height: 34px;
+    font-size: 28px;
+}
+.costBucket{
+    opacity: 0.9;
+    font-weight: bold;
+    margin-left: 11px;
+    margin-top: 11px;
+    height: 44px;
+    color: rgb(4, 74, 4);
+    font-size: 28px;
+}
+.Wrapper{
+    transition: 1s;
+    border-radius: 14px;
+    margin-right:400px;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color:var(--buckwrap-color);
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    width: 1400px;
+    height: 700px;
+}
+.Wrapper::-webkit-scrollbar {
+    width: 5px;
+    background-color: black;
+}
+.Wrapper::-webkit-scrollbar-thumb {
+    background-color: #223c50;
+}
+.totalCost{
+    font-weight: bold;
+    color: rgb(6, 119, 6);
+    margin-top: 280px;
+    margin-left: 1910px;
+    position: fixed;
+    font-size: 100px;
+}
+.reshop{
+    text-decoration: underline;
+    color: beige;
+    margin-right: 54px;
+    font-size: 44px;
+    position: absolute;
+    margin-top: 210px;
+    opacity: 0.8;
+    
+    
+}
+
+.delButton{
+    background: none;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.delButton:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+
+@media(max-width:1700px){
+    .bucketPage{
+        min-width: 1700px;
+    }
+    .totalCost{
+        position: absolute;
+        font-size: 50px;
+        margin-left: 0;
+        margin-left: 1644px;
+    }
+}
+
+@media(max-width:1500px){
+    .bucketPage{
+        min-width:1500px;
+        max-height: 100vh;
+    }
+    .Wrapper{
+        width: 1300px;
+        margin: 0;
+        margin-top: 13px;
+        margin-left: 14px;
+    }
+    .totalCost{
+        position: absolute;
+         margin: 0;
+         margin-top: 710px;
+         margin-left: 544px;
+         font-size: 55px;
+    }
+}
+@media(max-width:1200px){
+    .bucketPage{
+        margin: 0;
+        min-height: 100vh;
+        min-width: 1200px;
+    }
+    .bucketFull{
+        margin: 0;
+
+    }
+    .Wrapper{
+        margin: 0;
+        margin-top: 44px;
+        margin-left: 38px;
+        width: 882px;
+        height: 700px;
+    }
+    .bucketItem{
+        width: 130px;
+        height: 140px;
+    }
+    .imgBucket{
+        margin: 0;
+        width: 77px;
+        height: 77px;
+    }
+    .costBucket{
+        margin: 0;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .totalCost{
+        margin: 0;
+        margin-left: 700px;
+        margin-top: 700px;
+        font-size: 55px;
+    }
+    .nameBucket{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:950px){
+    .bucketPage{
+        min-width: 950px;
+    }
+}
+@media(max-width:750px){
+    .bucketPage{
+      min-width: 750px;
+    }
+    .Wrapper{
+        width: 500px;
+    }
+    .totalCost{
+        margin: 0;
+        margin-top: 800px;
+    }
+}
+@media(max-width:498px){
+    .bucketPage{
+        min-height: 100vh;
+        min-width: 498px;
+    }
+    .bucketFull{
+        margin: 0;
+    }
+    .Wrapper{
+        margin: 0;
+        margin-top: 44px;
+        margin-right: px;
+        width: 422px;
+        height: 400px;
+    }
+    .bucketItem{
+        width: 130px;
+        height: 140px;
+    }
+    .imgBucket{
+        margin: 0;
+        width: 77px;
+        height: 77px;
+    }
+    .costBucket{
+        margin: 0;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .totalCost{
+        margin: 0;
+        margin-top: 444px;
+        font-size: 55px;
+    }
+    .nameBucket{
+        font-size: 15px;
+    }
+    
+}
+@media(max-width:414px){
+    .bucketPage{
+        min-width: 414px;
+        min-height: 100vh;
+    }
+}
+
+@media(max-width:375px){
+    .bucketPage{
+        min-width: 375px;
+    }
+    .Wrapper{
+        width: 375px;
+    }
+    .imgBucket{
+        width: 45px;
+    }
+}
+@media(max-width:360px){
+    .bucketPage{
+        min-width: 360px;
+    }
+    .Wrapper{
+        width: 359px;
+        overflow-x: hidden;
+    }
+    .nameBucket{
+        font-size: 11px;
+    }
+    .Empty h1 {
+        margin-left: 23px;
+        font-size: 28px;
+    }
+    .bucketItem{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media (max-height:700px) {
+    .bucketPage{
+        min-height: 700px;
+    }
+    .Wrapper{
+        height: 250px;
+    }
+    .totalCost{
+        margin: 0;
+        margin-top: 366px;
+    }
+    .Empty h1{
+        font-size: 22px;
+    }
+    .Empty img{
+        width: 200px;
+        margin-bottom: 44px;
+    }
+    .Empty h1.EmptyBucket{
+        font-size: 22px;
+        margin: 0;
+        margin-top: 422px;
+        margin-left: 77px;
+    }
+}

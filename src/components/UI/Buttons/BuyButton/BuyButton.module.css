@@ -1,0 +1,51 @@
+.buyButton {
+    margin-left: 400px;
+    width: 200px;
+    height: 80px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    overflow: hidden;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgba(208, 208, 224, 0.785);
+    background: var(--buybutt-color);
+    transition: color 0.3s, background 0.5s;
+  }
+  .buyButton:hover {
+    animation: stripes 0.75s infinite linear;
+    background: linear-gradient(
+      45deg,
+      rgb(73, 86, 82) 25%,
+      rgb(11, 6, 52) 25%,
+      rgb(8, 6, 65) 50%,
+      rgb(32, 20, 106) 50%,
+      rgb(28, 11, 52) 75%,
+      rgb(10, 9, 80) 75%,
+      rgb(15, 11, 98)
+    );
+    background-size: 10px 10px;
+    color: #ffaf02;
+  }
+  @keyframes stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 0;
+    }
+  }
+ 
+  
+  @media(max-width:500px){
+    .buyButton{
+     color: #ffaf02;
+     margin: 0;
+     margin-top: 250px;
+    }
+  }

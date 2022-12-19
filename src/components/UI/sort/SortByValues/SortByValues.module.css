@@ -1,0 +1,70 @@
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.AllValues{
+ display: flex;
+ margin-left:44px ;
+}
+.selectByCost{
+    transition: 1s;
+    margin-top: 50px;
+    color: white;
+    background-color: var(--sortback-color) ;
+    width: 140;
+    height: 44px;
+}
+.inputs{
+    text-align: center;
+    margin-left:74px;
+    color:white;
+}
+.inputs input{
+    transition: 1s;
+    color: white;
+    background-color:var(--sortback-color) ;
+    text-align: center;
+    border-radius: 11px;
+    font-size: 22px;
+    width: 88px;
+    height: 35px;
+}
+.inputs button{
+    cursor: pointer;
+    color:white;
+    border: 0;
+    border-radius: 11px;
+    background-color:rgba(208, 62, 9, 0.902);
+    margin-left: 8px;
+    width: 77px;
+    height: 33px;
+}
+
+@media(max-width:498px){
+    .inputs{
+        
+        font-size: 11px;
+    }
+    .inputs input{
+        font-size: 11px;
+        width: 30px;
+        height: 22px;
+    }
+}
+
+@media(max-width:375px){
+    .inputs input{
+        width: 25px;
+        height: 11px;
+    }
+    .inputs button{
+        width: 66px;
+        font-size: 12px;
+        height: 22px;
+    }
+}

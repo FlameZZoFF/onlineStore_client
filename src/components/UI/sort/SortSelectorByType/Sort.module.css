@@ -1,0 +1,28 @@
+.Selector{
+  transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.select{
+  transition: all .5s ease;
+    border:0;
+    margin-top: 44px;
+    color:white;
+    font-size: 22px;
+    background-color: rgba(39, 33, 25, 0.381);
+    width: 344px;
+    height: 49px;
+    text-align: center;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media(max-width:498px){
+  .select{
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+  }
+}

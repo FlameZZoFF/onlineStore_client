@@ -1,0 +1,141 @@
+.StartPage{
+    transition: 1s;
+    background-color: var(--background-color);
+    width: calc(100%-20px);
+    min-height: 1166px;
+}
+.Cotegories{
+  pointer-events: none;
+  transition: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  height: 999px;
+  background-color: var(--background-color);
+  margin-left: 400px;
+  margin-right: 400px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.AllCategories{
+  pointer-events: fill;
+  transition: 1s;
+    background-color: var(--category-color);
+    color:var(--category-text-color);
+    font-weight: bold;
+    font-style:oblique;
+    border-radius: 11px;
+    margin-top: 46px;
+    font-size: 24px;
+    margin-right: 11px;
+    text-align: center;
+    height: 389px;
+    width: 222px;
+    border: 2px solid black;
+}
+
+
+.AllPhoto{
+    pointer-events: none;
+    margin-top: 55px;
+    width: 200px;
+    height: 200px;
+}
+  
+  .active:hover{
+    transition: 0.3s;
+    box-shadow: inset 0 0 0 3px #4e446d;
+  }
+  @media(max-width:1500px){
+    .StartPage{
+      min-width: 1500px;
+    }
+    .AllCategories{
+      width: 200px;
+      height: 200px;
+      font-size: 17px;
+    }
+    .AllPhoto{
+      margin: 0;
+      width: 110px;
+    }
+
+  }
+
+  @media (max-width:1200px){
+    .StartPage{
+      min-height: 100vh;
+      min-width: 1200px;
+    }
+    .Cotegories{
+      flex-wrap: wrap;
+    }
+    .AllCategories{
+      margin-top: 5px;
+      width: 100px;
+      height: 220px;
+      font-size: 9px;
+    }
+    .AllPhoto{
+      width: 80px;
+      height: 120px;
+    }
+  }
+  @media(max-width:950px){
+    .StartPage{
+      min-width: 950px;
+    }
+    .AllCategories{
+      width: 300px;
+      height: 100px;
+    }
+    .AllPhoto{
+      width: 200px;
+      height: 70px;
+    }
+  }
+  @media(max-width:750px){
+    .StartPage{
+      min-width: 750px;
+    }
+  }
+  @media(max-width:498px){
+    .StartPage{
+      min-width: 498px;
+      min-height: 100vh;
+    }
+    .AllCategories{
+      font-size: 13px;
+      width: 130px;
+      height: 130px;
+    }
+    .Cotegories{
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    .AllPhoto{
+      width: 88px;
+      height: 35px;
+    }
+  }
+
+  @media(max-width:414px){
+    .StartPage{
+      min-width: 414px;
+    }
+    .Cotegories{
+      min-height: 100vh;
+    }
+  }
+
+  @media(max-width:375px){
+    .StartPage{
+      min-width: 375px;
+    }
+  }
+  @media(max-width:360px){
+    .StartPage{
+      min-width: 360px;
+    }
+  }
+  

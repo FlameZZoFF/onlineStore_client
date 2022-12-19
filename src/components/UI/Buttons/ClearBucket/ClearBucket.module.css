@@ -1,0 +1,71 @@
+.clearBucket {
+    margin-right: 1400px;
+    border-bottom: 100px;
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: absolute;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .clearBucket {
+    background: var(--clearbuck-color);
+    border: none;
+    z-index: 1;
+  }
+  .clearBucket:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #663dff;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .clearBucket:hover {
+    color: #fff;
+  }
+  .clearBucket:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .clearBucket:active {
+    top: 2px;
+  }
+  @media(max-width:1700px){
+    .clearBucket{
+      margin: 0;
+    }
+  }
+  @media(max-width:1500px){
+    .clearBucket{
+      margin: 0;
+    }
+  }
+  @media(max-width:498px){
+    .clearBucket{
+      margin: 0;
+      margin-right: 22px;
+    }
+  }
+  @media(max-width:1200px){
+    .clearBucket{
+      margin: 0;
+    }
+  }
