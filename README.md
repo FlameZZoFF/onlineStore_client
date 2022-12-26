@@ -1,4 +1,4 @@
-<h1>Deploy</h1>  https://online-compute-store2.herokuapp.com
+<h1>Deploy</h1>  https://main--melodic-sable-1c9768.netlify.app/StartPage
 
 <h1>Technology Stack</h1> 
 1.React
