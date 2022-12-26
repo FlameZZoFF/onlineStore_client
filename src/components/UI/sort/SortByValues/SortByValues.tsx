@@ -3,6 +3,13 @@ import styles from './SortByValues.module.css'
 export default function SortByValues({SortByCost,SortByRange,options,Devices}:any) {
     const [StartAt,setStartAt]:any = useState()
     const [EndAt,setEndAt]:any = useState()
+
+    const showHandler = () =>{
+      SortByRange(StartAt,EndAt)
+      setStartAt('')
+      setEndAt('')
+    }
+
   return (
     <div className={styles.AllValues}>
       <select onChange={SortByCost}  className={styles.selectByCost}>
@@ -11,12 +18,12 @@ export default function SortByValues({SortByCost,SortByRange,options,Devices}:an
        <option key={key+1} value = {option.value}>{option.name}</option>
        )}
       </select>
-
+       
       <div className={styles.inputs}>
       <p>Выберите нужную вам цену</p>
       от<input type='number' onChange={e=>setStartAt(e.target.value)} value={StartAt}></input>$
       до<input type='number' onChange={e=>setEndAt(e.target.value)} value = {EndAt}></input>$
-      <button onClick={()=>SortByRange(StartAt,EndAt)}>Показать</button>
+      <button className={styles.button} onClick={showHandler}>Показать</button>
       </div>
     </div>
   )

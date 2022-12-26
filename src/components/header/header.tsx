@@ -53,7 +53,7 @@ export default function Header() {
     <div id={'4'}  className ={styles.Header}>
      <div  className={styles.HeaderLogo}><img className={styles.HeaderLogo} src={Logo}/></div>
      <SwitchTheme />
-     <div className ={styles.HeaderText}><Link to ='/StartPage' style={{textDecoration:'none',color:'white'}}>Интернет-магазин</Link></div> 
+     <div className ={styles.HeaderText}><Link to ='/StartPage' style={{textDecoration:'none',color:'white'}}>www.by</Link></div> 
      {User.role === 'ADMIN' ? <Link to='/admin'><div className={styles.adminPanel}>Админ</div></Link> : ''} 
      {!Auth 
      
@@ -73,8 +73,8 @@ export default function Header() {
      <img className={styles.logout} onClick={logout} src={LogoutImg}></img> 
      </div>
      } 
+     {!User.id ? '' : <Link style={{margin:0,textDecoration:'none'}} to='/BucketPage'><span className={styles.bucketCounter}>{BasketLength ? BasketLength?.length : ''}</span></Link>}
      <div className={styles.bucketLogo}><Link to='/BucketPage'><img className={styles.bucketLogo} src={bucketImage}></img></Link></div>
-     {!User.id ? '' : <Link style={{margin:0,textDecoration:'none'}} to='/BucketPage'><h1 className={styles.bucketCounter}>{BasketLength ? BasketLength?.length : ''}</h1></Link>}
 
     </div>
   )

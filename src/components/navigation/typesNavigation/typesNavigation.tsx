@@ -6,7 +6,7 @@ import { setType } from '../../redux/slices/typesSlice'
 import './typesNavigation.scss'
 
 interface typesProp{
-  setBrand:() => void
+  setBrand:(sd:any) => void
 }
 
 export default function TypesNavigation({setBrand}:typesProp) {
@@ -23,6 +23,7 @@ export default function TypesNavigation({setBrand}:typesProp) {
       <div key={el.id} className='typeNavigation_wrap'>
         <li className={type == el.id ? 'typeNavigation_el-active typeNavigation_el' : 'typeNavigation_el'} onClick={
             (e)=>{dispatch(setType(el.id))
+               setBrand('')
             }}>{el.name}</li>
         </div>
       )}

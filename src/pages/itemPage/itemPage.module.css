@@ -3,8 +3,9 @@
  text-align: center;
  justify-content: center;
  align-items: center;
+ align-content: center;
  height: 914px;
- min-width: 100%;
+ width:100vw;
  background-color: var(--background-color);
 }
  
@@ -13,9 +14,9 @@
     font-size: 73px;
 }
 .itemPhoto{
-    margin-left: 14px;
-    max-width: 555px;
-    max-height: 555px;
+    align-self: center;
+    max-width: 1300px;
+    width:100vw;
 }
 .itemCost{
     font-weight: bold;
@@ -60,10 +61,10 @@
   }
   @media(max-width:1500px){
     .itemPage{
-        min-width: 1500px;
+        
     }
     .itemPhoto{
-        height: 450px;
+        
     }
     .itemDesc{
         margin: 0;
@@ -72,12 +73,9 @@
   }
   @media (max-width:1200px){
     .itemPage{
-        min-width: 1200px;
+       
     }
-    .itemPhoto{
-        width: 443px;
-        height: 183px;
-    }
+   
     .itemCost{
         margin-top: 380px;
         font-size: 46px;
@@ -92,35 +90,35 @@
  }
  @media(max-width:950px){
     .itemPage{
-        min-width: 950px;
+        
     }
  }
  @media(max-width:750px){
     .itemPage{
-      min-width: 750px;
+     
     }
 }
  @media(max-width:498px){
     .itemPage{
-        min-width: 498px;
+        
     }
     .itemDesc{
         margin: 0;
     }
     .itemPage{
         height: 800px;
-        min-width: 498px;
+        
     }
     .itemPhoto{
         margin-top: 30px;
-        width: 300px;
+        
 
     }
  }
 
  @media(max-width:375px){
     .itemPage{
-        min-width: 375px;
+        
     }
    .itemDesc{
     margin-left: 144px;
@@ -131,7 +129,7 @@
 
 @media(max-width:360px){
     .itemPage{
-        min-width: 360px;
+        
     }
 }
 

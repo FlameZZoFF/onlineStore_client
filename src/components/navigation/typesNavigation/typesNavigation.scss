@@ -1,6 +1,6 @@
 .typeNavigation{
     margin-top: 10px;
-    width: auto;
+    width: 100vw;
     color: white;
     display: flex;
     justify-content: center;
@@ -17,6 +17,8 @@
 
 }
 .typeNavigation_el{
+    margin-left: 10px;
+    margin-top: 5px;
     font-size: 18px;
     transition: 0.5s;
     cursor: pointer;

@@ -2,7 +2,7 @@
     transition: 1s;
     border: 1px solid #292b2a;
     background-color: var(--background-color);
-    max-width: calc(100%- 20px);
+    width: 100vw;
     min-height: 1100px;
 }
 .div{
@@ -24,6 +24,7 @@
     width:calc(100%-40px);
     margin-left: 144px;
     margin-right: 144px;
+    
     box-shadow: 1px 15px 10px 5px black;
     
 }
@@ -110,12 +111,12 @@
   }
   @media(max-width:1700px){
     .StorePage{
-      min-width: 1700px;
+      
     }
   }
   @media(max-width:1500px){
     .StorePage{
-      min-width: 1500px;
+      
     }
     .AllItems{
       width: 1150px;
@@ -123,12 +124,12 @@
     .itemCost{
       margin: 0;
       margin-top: 60px;
-      margin-left: 890px;
+      margin-left: 1060px;
     }
   }
   @media (max-width:1200px){
     .StorePage{
-      min-width: 1200px;
+      
       min-height: 100vh;
     }
    .AllItems{
@@ -139,7 +140,7 @@
    }
    .itemCost{
     margin: 0;
-    margin-left: 388px;
+    margin-left: 359px;
     font-size: 14px;
    }
    .itemName{
@@ -155,7 +156,7 @@
   }
   @media(max-width:950px){
     .StorePage{
-      min-width: 950px;
+      
     }
     .AllItems{
       margin: 0;
@@ -165,7 +166,7 @@
   }
   @media(max-width:750px){
     .StorePage{
-      min-width: 750px;
+      
     }
     .AllItems{
       margin-left: 0;
@@ -174,7 +175,7 @@
   }
   @media (max-width:498px){
     .StorePage{
-      min-width: 498px;
+      
       min-height: 950px;
     }
    .AllItems{
@@ -187,7 +188,7 @@
    }
    .itemCost{
     margin: 0;
-    margin-left: 315px;
+    margin-left: 300px;
     font-size: 14px;
    }
    .itemName{
@@ -207,7 +208,7 @@
   }
   @media(max-width:414px){
     .StorePage{
-      min-width: 414px;
+      
       min-height: 100vh;
     }
     .AllItems{
@@ -221,7 +222,7 @@
   }
   @media(max-width:375px){
     .StorePage{
-      min-width: 375px;
+      
       min-height: 100vh;
     }
     .AllItems{
@@ -236,7 +237,7 @@
   }
   @media(max-width:360px){
     .StorePage{
-      min-width: 360px;
+     
     }
     .AllItems{
       margin: 0;

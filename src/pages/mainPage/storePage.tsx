@@ -25,6 +25,7 @@ export default function StorePage() {
     const FirstItemIndex = LastItemIndex - ItemsPerPage
     const paginate = (pageNumber:number) => setCurrentPAge(pageNumber)
     const [currentItems,setCurrentItems]:any = useState()
+    const [alert,setAlert]:any = useState(false)
   
    
    useEffect(()=>{
@@ -51,6 +52,19 @@ export default function StorePage() {
     }
   }
   
+  
+ 
+
+   const sortByRange = (value1:number,value2:number) =>{
+    const filterStore = currentItems.filter((element:any)=>{
+      if(element.price >= value1 && element.price <= value2){
+        return true
+      }else{
+        return false
+      }
+    })
+    setCurrentItems([...filterStore])
+   }
 
 
   if(isLoading){
@@ -60,10 +74,15 @@ export default function StorePage() {
  
   return (
     <div className={styles.StorePage}>
+         <CSSTransition in={alert}  timeout={300} classNames='transition' unmountOnExit>
+        
+        <SuccesBucketAdd/>
+
+      </CSSTransition> 
       <TypesNavigation  setBrand={setBrand}/>
       <BrandNavigation brand={brand} setBrand={setBrand}/>
       <Search/>
-      <SortByValues SortByCost={SortByCost} options = {[
+      <SortByValues SortByCost={SortByCost} SortByRange={sortByRange} options = {[
         {name:'По убыванию',value:'Down'},
         {name:'По возрастанию',value:'Up'}
       ]}/>
@@ -81,7 +100,7 @@ export default function StorePage() {
                 <div className={styles.itemText}></div>
                 <div  className={styles.itemName}>{item.name}</div>
                 <div className = {styles.itemCost}>{item.price}$</div>
-                <Link to ='' style={{pointerEvents:'none'}}><AddToBucket id={item.id} /></Link>
+                <Link to ='' style={{pointerEvents:'none'}}><AddToBucket setAlert={setAlert} id={item.id} /></Link>
                 </div>
                 </Link>
         )}</div>}

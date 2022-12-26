@@ -1,6 +1,9 @@
 .search{
+    margin-top: 20px;
     z-index: 999;
-    margin-left: 1400px;
+    margin-left: 50px;
+    width: 100px;
+    
 }
 .searchList{
     width: 280px;
@@ -9,6 +12,7 @@
     opacity: 0.6;
     background-color: white;
     position: absolute;
+    
 }
 .searchQuerry{
     transition: 1s;
@@ -17,6 +21,7 @@
     background-color: var(--sortback-color) ;
     color: white;
     width: 280px;
+    
 }
 .itemName{
     text-decoration: none;
@@ -27,44 +32,3 @@
     background-color: rgba(41, 64, 115, 0.431);
 }
 
-@media(max-width:1500px){
-    .search{
-        margin: 0;
-        margin-left: 1000px;
-        margin-top: 150px;
-    }
-}
-@media (max-width:1200px){
-    .search{
-        margin: 0;
-        margin-top: 150px;
-        margin-left: 930px;
-    }
-    .searchQuerry{
-        width: 190px;
-    }
-}
-@media(max-width:950px){
-    .search{
-        margin: 0;
-        margin-top: 150px;
-        margin-left: 700px;
-    }
-}
-@media(max-width:750px){
-    .search{
-      margin: 0;
-      margin-top: 90px;
-      margin-left: 550px;
-    }
-}
-@media (max-width:500px){
-    .search{
-        margin: 0;
-        margin-top: 84px;
-        
-    }
-    .searchQuerry{
-        width: 190px;
-    }
-}

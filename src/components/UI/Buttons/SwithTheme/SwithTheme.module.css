@@ -1,4 +1,5 @@
 .switchTheme{
+    margin-right: auto;
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;
@@ -17,12 +18,10 @@
     box-shadow: 0 20px 40px 0 var(--theme-color);
   }
 
-@media(max-width:498px){
+@media(max-width:450px){
     .switchTheme{
-        font-size: 10px;
-        margin: 0;
-        margin-left: 84px;
-        width: 50px;
-        height: 20px;
+       width: 40px;
+       height: 14px;
+       font-size: 10px;
     }
 }

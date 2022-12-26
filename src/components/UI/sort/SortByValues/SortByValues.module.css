@@ -9,7 +9,8 @@ input::-webkit-inner-spin-button {
 
 .AllValues{
  display: flex;
- margin-left:44px ;
+ width: 100vw;
+
 }
 .selectByCost{
     transition: 1s;
@@ -67,4 +68,7 @@ input::-webkit-inner-spin-button {
         font-size: 12px;
         height: 22px;
     }
+}
+.button{
+    margin-top: 5px;
 }

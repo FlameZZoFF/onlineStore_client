@@ -38,6 +38,7 @@ export default function RegistrationPage() {
         <input type='password' placeholder='Введите пароль' value={password} className='Register_form_password' onChange={(e:any)=>setPassword(e.target.value)}></input>
         <input type="submit" className='Register_form_submit' onClick={submitForm} />
         <h1 className='Register_form_error'>{error}</h1>
+        <p>pass min 6 symbols</p>
       </form>
     </div>
   )
