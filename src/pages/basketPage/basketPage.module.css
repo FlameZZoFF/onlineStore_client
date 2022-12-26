@@ -24,6 +24,7 @@
     text-align: center;
     height: 320px;
     width: calc(100%-44px);
+    max-width: calc(100%-44px);
     
 }
 .imgBucket{
