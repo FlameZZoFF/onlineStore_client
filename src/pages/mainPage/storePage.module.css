@@ -21,7 +21,8 @@
     margin-right: 11px;
     text-align: center;
     height: 155px;
-    width:calc(100%-40px);
+    width:1000px;
+    max-width:1000px;
     margin-left: 144px;
     margin-right: 144px;
     
